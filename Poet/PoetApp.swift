@@ -5,6 +5,8 @@
 //  Created by Eetu Eskelinen on 22.11.2022.
 //
 
+// Based on https://sarunw.com/posts/swiftui-menu-bar-app/ by Sarun Wongpatcharapakorn.
+
 import SwiftUI
 
 @main
