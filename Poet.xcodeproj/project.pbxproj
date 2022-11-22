@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B91630A9292D1F4E00855E7B /* PoetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91630A8292D1F4E00855E7B /* PoetApp.swift */; };
+		B91630AB292D1F4E00855E7B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91630AA292D1F4E00855E7B /* ContentView.swift */; };
+		B91630AD292D1F5000855E7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B91630AC292D1F5000855E7B /* Assets.xcassets */; };
+		B91630B0292D1F5000855E7B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B91630AF292D1F5000855E7B /* Preview Assets.xcassets */; };
+		B91630BB292D1F5000855E7B /* PoetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91630BA292D1F5000855E7B /* PoetTests.swift */; };
+		B91630C5292D1F5000855E7B /* PoetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91630C4292D1F5000855E7B /* PoetUITests.swift */; };
+		B91630C7292D1F5000855E7B /* PoetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91630C6292D1F5000855E7B /* PoetUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B91630B7292D1F5000855E7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B916309D292D1F4E00855E7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B91630A4292D1F4E00855E7B;
+			remoteInfo = Poet;
+		};
+		B91630C1292D1F5000855E7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B916309D292D1F4E00855E7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B91630A4292D1F4E00855E7B;
+			remoteInfo = Poet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B91630A5292D1F4E00855E7B /* Poet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B91630A8292D1F4E00855E7B /* PoetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoetApp.swift; sourceTree = "<group>"; };
+		B91630AA292D1F4E00855E7B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B91630AC292D1F5000855E7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B91630AF292D1F5000855E7B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B91630B1292D1F5000855E7B /* Poet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Poet.entitlements; sourceTree = "<group>"; };
+		B91630B6292D1F5000855E7B /* PoetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B91630BA292D1F5000855E7B /* PoetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoetTests.swift; sourceTree = "<group>"; };
+		B91630C0292D1F5000855E7B /* PoetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B91630C4292D1F5000855E7B /* PoetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoetUITests.swift; sourceTree = "<group>"; };
+		B91630C6292D1F5000855E7B /* PoetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B91630A2292D1F4E00855E7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B91630B3292D1F5000855E7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B91630BD292D1F5000855E7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B916309C292D1F4E00855E7B = {
+			isa = PBXGroup;
+			children = (
+				B91630A7292D1F4E00855E7B /* Poet */,
+				B91630B9292D1F5000855E7B /* PoetTests */,
+				B91630C3292D1F5000855E7B /* PoetUITests */,
+				B91630A6292D1F4E00855E7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B91630A6292D1F4E00855E7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B91630A5292D1F4E00855E7B /* Poet.app */,
+				B91630B6292D1F5000855E7B /* PoetTests.xctest */,
+				B91630C0292D1F5000855E7B /* PoetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B91630A7292D1F4E00855E7B /* Poet */ = {
+			isa = PBXGroup;
+			children = (
+				B91630A8292D1F4E00855E7B /* PoetApp.swift */,
+				B91630AA292D1F4E00855E7B /* ContentView.swift */,
+				B91630AC292D1F5000855E7B /* Assets.xcassets */,
+				B91630B1292D1F5000855E7B /* Poet.entitlements */,
+				B91630AE292D1F5000855E7B /* Preview Content */,
+			);
+			path = Poet;
+			sourceTree = "<group>";
+		};
+		B91630AE292D1F5000855E7B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B91630AF292D1F5000855E7B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B91630B9292D1F5000855E7B /* PoetTests */ = {
+			isa = PBXGroup;
+			children = (
+				B91630BA292D1F5000855E7B /* PoetTests.swift */,
+			);
+			path = PoetTests;
+			sourceTree = "<group>";
+		};
+		B91630C3292D1F5000855E7B /* PoetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B91630C4292D1F5000855E7B /* PoetUITests.swift */,
+				B91630C6292D1F5000855E7B /* PoetUITestsLaunchTests.swift */,
+			);
+			path = PoetUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B91630A4292D1F4E00855E7B /* Poet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B91630CA292D1F5000855E7B /* Build configuration list for PBXNativeTarget "Poet" */;
+			buildPhases = (
+				B91630A1292D1F4E00855E7B /* Sources */,
+				B91630A2292D1F4E00855E7B /* Frameworks */,
+				B91630A3292D1F4E00855E7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Poet;
+			productName = Poet;
+			productReference = B91630A5292D1F4E00855E7B /* Poet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B91630B5292D1F5000855E7B /* PoetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B91630CD292D1F5000855E7B /* Build configuration list for PBXNativeTarget "PoetTests" */;
+			buildPhases = (
+				B91630B2292D1F5000855E7B /* Sources */,
+				B91630B3292D1F5000855E7B /* Frameworks */,
+				B91630B4292D1F5000855E7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B91630B8292D1F5000855E7B /* PBXTargetDependency */,
+			);
+			name = PoetTests;
+			productName = PoetTests;
+			productReference = B91630B6292D1F5000855E7B /* PoetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B91630BF292D1F5000855E7B /* PoetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B91630D0292D1F5000855E7B /* Build configuration list for PBXNativeTarget "PoetUITests" */;
+			buildPhases = (
+				B91630BC292D1F5000855E7B /* Sources */,
+				B91630BD292D1F5000855E7B /* Frameworks */,
+				B91630BE292D1F5000855E7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B91630C2292D1F5000855E7B /* PBXTargetDependency */,
+			);
+			name = PoetUITests;
+			productName = PoetUITests;
+			productReference = B91630C0292D1F5000855E7B /* PoetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B916309D292D1F4E00855E7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					B91630A4292D1F4E00855E7B = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					B91630B5292D1F5000855E7B = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = B91630A4292D1F4E00855E7B;
+					};
+					B91630BF292D1F5000855E7B = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = B91630A4292D1F4E00855E7B;
+					};
+				};
+			};
+			buildConfigurationList = B91630A0292D1F4E00855E7B /* Build configuration list for PBXProject "Poet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B916309C292D1F4E00855E7B;
+			productRefGroup = B91630A6292D1F4E00855E7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B91630A4292D1F4E00855E7B /* Poet */,
+				B91630B5292D1F5000855E7B /* PoetTests */,
+				B91630BF292D1F5000855E7B /* PoetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B91630A3292D1F4E00855E7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91630B0292D1F5000855E7B /* Preview Assets.xcassets in Resources */,
+				B91630AD292D1F5000855E7B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B91630B4292D1F5000855E7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B91630BE292D1F5000855E7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B91630A1292D1F4E00855E7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91630AB292D1F4E00855E7B /* ContentView.swift in Sources */,
+				B91630A9292D1F4E00855E7B /* PoetApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B91630B2292D1F5000855E7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91630BB292D1F5000855E7B /* PoetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B91630BC292D1F5000855E7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91630C7292D1F5000855E7B /* PoetUITestsLaunchTests.swift in Sources */,
+				B91630C5292D1F5000855E7B /* PoetUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B91630B8292D1F5000855E7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B91630A4292D1F4E00855E7B /* Poet */;
+			targetProxy = B91630B7292D1F5000855E7B /* PBXContainerItemProxy */;
+		};
+		B91630C2292D1F5000855E7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B91630A4292D1F4E00855E7B /* Poet */;
+			targetProxy = B91630C1292D1F5000855E7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B91630C8292D1F5000855E7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B91630C9292D1F5000855E7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B91630CB292D1F5000855E7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Poet/Poet.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Poet/Preview Content\"";
+				DEVELOPMENT_TEAM = 3R6252728A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eetueskelinen.Poet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B91630CC292D1F5000855E7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Poet/Poet.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Poet/Preview Content\"";
+				DEVELOPMENT_TEAM = 3R6252728A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eetueskelinen.Poet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B91630CE292D1F5000855E7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3R6252728A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eetueskelinen.PoetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Poet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Poet";
+			};
+			name = Debug;
+		};
+		B91630CF292D1F5000855E7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3R6252728A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eetueskelinen.PoetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Poet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Poet";
+			};
+			name = Release;
+		};
+		B91630D1292D1F5000855E7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3R6252728A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eetueskelinen.PoetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Poet;
+			};
+			name = Debug;
+		};
+		B91630D2292D1F5000855E7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3R6252728A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eetueskelinen.PoetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Poet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B91630A0292D1F4E00855E7B /* Build configuration list for PBXProject "Poet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B91630C8292D1F5000855E7B /* Debug */,
+				B91630C9292D1F5000855E7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B91630CA292D1F5000855E7B /* Build configuration list for PBXNativeTarget "Poet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B91630CB292D1F5000855E7B /* Debug */,
+				B91630CC292D1F5000855E7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B91630CD292D1F5000855E7B /* Build configuration list for PBXNativeTarget "PoetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B91630CE292D1F5000855E7B /* Debug */,
+				B91630CF292D1F5000855E7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B91630D0292D1F5000855E7B /* Build configuration list for PBXNativeTarget "PoetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B91630D1292D1F5000855E7B /* Debug */,
+				B91630D2292D1F5000855E7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B916309D292D1F4E00855E7B /* Project object */;
+}
