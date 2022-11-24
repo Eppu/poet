@@ -91,6 +91,7 @@ struct ContentView: View {
                 }
                 Button {
                     print("Deleting")
+                    store.clear()
                 } label: {
                     HStack {
                         Image(systemName: "trash")
