@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct Task: Hashable, Identifiable {
+struct Task: Hashable, Identifiable, Codable {
     var id = UUID()
     var title: String
     var completed = false
@@ -56,24 +56,20 @@ struct ContentView: View {
     // TODO: Add AppStorage for persisting task state
     @State private var todoInput: String = ""
     @FocusState private var todoInputIsFocused: Bool
-    @State var tasks: [Task] = [
-        Task(title: "Here's to the crazy ones"),
-        Task(title: "Another task", completed: true),
-        Task(title: "A long task name that will  need to be rendered on separate rows")
-    ]
-    
+//    @State var tasks: [Task] = [
+//        Task(title: "Here's to the crazy ones"),
+//        Task(title: "Another task", completed: true),
+//        Task(title: "A long task name that will  need to be rendered on separate rows")
+//    ]
+    @StateObject private var store = TaskStore()
     
     var body: some View {
         VStack(alignment: .leading) {
-            //            Image(systemName: "globe")
-            //                .imageScale(.large)
-            //                .foregroundColor(.accentColor)
-            //            Text("Things to get done").font(Font.headline).bold()
-            
+
             // Populate list with todos
             ScrollView {
                 VStack(alignment: .leading, spacing: 0) {
-                    ForEach(tasks, id: \.id) { task in
+                    ForEach(store.tasks, id: \.id) { task in
                         TaskView(task: task)
                     }
                 }
@@ -88,9 +84,10 @@ struct ContentView: View {
                 .disableAutocorrection(true)
                 .onSubmit {
                     print("Added \(todoInput) to tasks")
-                    tasks.append(Task(title: "\(todoInput)"))
+                    store.tasks.append(Task(title: "\(todoInput)"))
+                    store.save()
                     todoInput = ""
-                    print("tasks count is ", tasks.count)
+                    print("tasks count is ", store.tasks.count)
                 }
                 Button {
                     print("Deleting")

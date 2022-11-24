@@ -30,7 +30,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
         
         if let statusButton = statusItem.button {
             // Set status bar image
-            statusButton.image = NSImage(systemSymbolName: "1.square", accessibilityDescription: "Circle with number 1")
+            statusButton.image = NSImage(systemSymbolName: "1.circle", accessibilityDescription: "Circle with number 1")
             
             statusButton.action = #selector(togglePopover)
         }
