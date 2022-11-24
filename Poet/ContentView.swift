@@ -34,10 +34,12 @@ struct TaskView: View {
                     .scaleEffect(task.completed ? 0.96 : 1, anchor: .leading )
                 Spacer()
             }
+            .padding(.horizontal)
+            .padding(.vertical, 10)
+            .background( hovered ? RoundedRectangle(cornerRadius: 5).fill(.secondary.opacity(0.1)) : nil)
         }
         .buttonStyle(PlainButtonStyle())
-        .padding(.vertical, 5)
-        .background( hovered ? RoundedRectangle(cornerRadius: 5).fill(.secondary.opacity(0.1)) : nil)
+
         .animation(.easeInOut(duration: 0.1), value: hovered)
         .onHover { isHovered in
             self.hovered = isHovered
@@ -70,15 +72,13 @@ struct ContentView: View {
             
             // Populate list with todos
             ScrollView {
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 0) {
                     ForEach(tasks, id: \.id) { task in
                         TaskView(task: task)
                     }
                 }
             }.padding(.top, 5)
-            
-            
-            
+        
             HStack() {
                 TextField(
                     "What do you need to get done?",
@@ -99,9 +99,8 @@ struct ContentView: View {
                         Image(systemName: "trash")
                     }
                 }
-            }
+            }.padding()
         }
-        .padding()
         .frame(width: 300, height: 300)
         
     }
