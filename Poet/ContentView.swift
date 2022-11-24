@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ConfettiSwiftUI
 
 
 struct Task: Hashable, Identifiable, Codable {
@@ -14,7 +15,7 @@ struct Task: Hashable, Identifiable, Codable {
     var completed = false
 }
 
-struct TaskView: View {
+struct TaskRow: View {
     @State var task: Task
     @State private var hovered = false
     
@@ -39,7 +40,6 @@ struct TaskView: View {
             .background( hovered ? RoundedRectangle(cornerRadius: 5).fill(.secondary.opacity(0.1)) : nil)
         }
         .buttonStyle(PlainButtonStyle())
-
         .animation(.easeInOut(duration: 0.1), value: hovered)
         .onHover { isHovered in
             self.hovered = isHovered
@@ -53,28 +53,28 @@ struct TaskView: View {
 }
 
 struct ContentView: View {
-    // TODO: Add AppStorage for persisting task state
+    @StateObject private var store = TaskStore()
     @State private var todoInput: String = ""
     @FocusState private var todoInputIsFocused: Bool
-//    @State var tasks: [Task] = [
-//        Task(title: "Here's to the crazy ones"),
-//        Task(title: "Another task", completed: true),
-//        Task(title: "A long task name that will  need to be rendered on separate rows")
-//    ]
-    @StateObject private var store = TaskStore()
+    //    @State var tasks: [Task] = [
+    //        Task(title: "Here's to the crazy ones"),
+    //        Task(title: "Another task", completed: true),
+    //        Task(title: "A long task name that will  need to be rendered on separate rows")
+    //    ]
+    @State private var allTasksCompleted: Int = 0
     
     var body: some View {
         VStack(alignment: .leading) {
-
+            
             // Populate list with todos
             ScrollView {
                 VStack(alignment: .leading, spacing: 0) {
                     ForEach(store.tasks, id: \.id) { task in
-                        TaskView(task: task)
+                        TaskRow(task: task)
                     }
                 }
             }.padding(.top, 5)
-        
+            
             HStack() {
                 TextField(
                     "What do you need to get done?",
@@ -97,7 +97,9 @@ struct ContentView: View {
                         Image(systemName: "trash")
                     }
                 }
-            }.padding()
+            }
+            .padding()
+            .confettiCannon(counter: $store.allCompleted)
         }
         .frame(width: 300, height: 300)
         

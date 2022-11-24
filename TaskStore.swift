@@ -9,6 +9,7 @@ import Foundation
 
 class TaskStore: ObservableObject {
     @Published var tasks = [Task]()
+    @Published var allCompleted: Int = 0
     
     init() {
         load()
@@ -25,6 +26,10 @@ class TaskStore: ObservableObject {
         do {
             let data = try JSONEncoder().encode(tasks)
             UserDefaults.standard.set(data, forKey: "tasks")
+            
+            if (self.tasks.allSatisfy(\.completed)) {
+                allCompleted = 1
+            }
         } catch {
             print(error)
         }
