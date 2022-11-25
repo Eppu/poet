@@ -83,11 +83,13 @@ struct ContentView: View {
                 .focused($todoInputIsFocused)
                 .disableAutocorrection(true)
                 .onSubmit {
-                    print("Added \(todoInput) to tasks")
-                    store.tasks.append(Task(title: "\(todoInput)"))
-                    store.save()
-                    todoInput = ""
-                    print("tasks count is ", store.tasks.count)
+                    if (!todoInput.isEmpty) {
+                        print("Added \(todoInput) to tasks")
+                        store.tasks.append(Task(title: "\(todoInput)"))
+                        store.save()
+                        todoInput = ""
+                        print("tasks count is ", store.tasks.count)
+                    }
                 }
                 Button {
                     print("Deleting")
