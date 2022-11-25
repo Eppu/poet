@@ -58,7 +58,6 @@ struct ContentView: View {
     //        Task(title: "Another task", completed: true),
     //        Task(title: "A long task name that will  need to be rendered on separate rows")
     //    ]
-    @State private var allTasksCompleted: Int = 0
     
     var body: some View {
         VStack(alignment: .leading) {
