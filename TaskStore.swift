@@ -22,6 +22,13 @@ class TaskStore: ObservableObject {
         tasks = savedTasks
     }
     
+    func updateTask(task: Task) {
+        if let index = self.tasks.firstIndex(where: { $0.id == task.id }) {
+            self.tasks[index] = task
+        }
+        save()
+    }
+    
     func save() {
         do {
             let data = try JSONEncoder().encode(tasks)

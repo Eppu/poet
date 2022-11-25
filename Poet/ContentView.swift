@@ -18,11 +18,13 @@ struct Task: Hashable, Identifiable, Codable {
 struct TaskRow: View {
     @State var task: Task
     @State private var hovered = false
+    @StateObject private var store = TaskStore();
     
     var body: some View {
         Button{
             withAnimation(.easeInOut(duration: 0.2)) {
                 task.completed.toggle()
+                store.updateTask(task: task)
             }
             
         } label: {
@@ -43,11 +45,6 @@ struct TaskRow: View {
         .animation(.easeInOut(duration: 0.1), value: hovered)
         .onHover { isHovered in
             self.hovered = isHovered
-        }
-        
-        
-        if(task.completed) {
-            //            Button(action: { tasks.filter() {$0.id != task.id}})
         }
     }
 }
