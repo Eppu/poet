@@ -7,24 +7,25 @@
 
 import SwiftUI
 
-@main
-struct PoetApp: App {
-    
-    @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
-    
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
-}
+//@main
+//struct PoetApp: App {
+//
+//    @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+//
+//    var body: some Scene {
+//        WindowGroup {
+//            ContentView()
+//        }
+//    }
+//}
 
 class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
     
     private var statusItem: NSStatusItem!
     private var popover: NSPopover!
     
-    @MainActor func applicationDidFinishLaunching(_ notification: Notification) {
+//    @MainActor
+    func applicationDidFinishLaunching(_ notification: Notification) {
         
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         

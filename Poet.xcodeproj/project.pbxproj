@@ -14,6 +14,7 @@
 		B91630BB292D1F5000855E7B /* PoetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91630BA292D1F5000855E7B /* PoetTests.swift */; };
 		B91630C5292D1F5000855E7B /* PoetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91630C4292D1F5000855E7B /* PoetUITests.swift */; };
 		B91630C7292D1F5000855E7B /* PoetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91630C6292D1F5000855E7B /* PoetUITestsLaunchTests.swift */; };
+		B92F559D2951F10E00299DE4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92F559C2951F10E00299DE4 /* main.swift */; };
 		B95FF244292FBF0C001EA988 /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95FF243292FBF0C001EA988 /* TaskStore.swift */; };
 		B95FF247292FCC3C001EA988 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B95FF246292FCC3C001EA988 /* ConfettiSwiftUI */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,7 @@
 		B91630C0292D1F5000855E7B /* PoetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B91630C4292D1F5000855E7B /* PoetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoetUITests.swift; sourceTree = "<group>"; };
 		B91630C6292D1F5000855E7B /* PoetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B92F559C2951F10E00299DE4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B95FF243292FBF0C001EA988 /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 		B91630A7292D1F4E00855E7B /* Poet */ = {
 			isa = PBXGroup;
 			children = (
+				B92F559C2951F10E00299DE4 /* main.swift */,
 				B91630A8292D1F4E00855E7B /* PoetApp.swift */,
 				B91630AA292D1F4E00855E7B /* ContentView.swift */,
 				B91630AC292D1F5000855E7B /* Assets.xcassets */,
@@ -272,6 +275,7 @@
 			files = (
 				B91630AB292D1F4E00855E7B /* ContentView.swift in Sources */,
 				B91630A9292D1F4E00855E7B /* PoetApp.swift in Sources */,
+				B92F559D2951F10E00299DE4 /* main.swift in Sources */,
 				B95FF244292FBF0C001EA988 /* TaskStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
